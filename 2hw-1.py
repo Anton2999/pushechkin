@@ -1,7 +1,6 @@
+z = input()
 b = list()
-while True:
-    z = input()
-    if z == '':
-        break
+while z != '':
     b.append(z)
+    z = input()
 print(b)
