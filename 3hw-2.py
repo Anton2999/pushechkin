@@ -1,15 +1,14 @@
 def season(month):
-    if month in range(1, 3):
-        print("Зима")
-    elif month == 12:
-        print("Зима")
-    elif month in range(3, 6):
-        print("Весна")
-    elif month in range(6, 9):
-        print("Лето")
-    elif month in range(9, 12):
-        print("Осень")
+    if month == 12 or 1 <= month <= 2:
+        return "Зима"
+    elif 3 <= month <= 5:
+        return "Весна"
+    elif 6 <= month <= 8:
+        return "Лето"
+    elif 9 <= month <= 11:
+        return "Осень"
+    else:
+        return "Нет такого месяца!"
 
 
-month = int(input("Введите номер месяца:"))
-season(month)
+print(season(month=int(input("Введите номер месяца: "))))
