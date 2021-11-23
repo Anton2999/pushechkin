@@ -1,10 +1,9 @@
-z = input()
-b = list()
-while z != '':
-    b.append(z)
-    z = input()
-print(b)
+from hw31 import spisok
 
-for x in set(b):    # set() - преобразует в множество, удаляя дубликаты.
-    y = b.count(x)
-    print("Элемент - ", x, "\t|""\tЧастота - ", y)
+
+print("Введите список >> ")
+a = spisok()
+print("Элемент | Частота")
+for i in set(a):
+    b = a.count(i)
+    print(i, "|", b)
