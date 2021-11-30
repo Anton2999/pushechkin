@@ -17,5 +17,5 @@ print(search(d, n))
 assert search([1, 2, 3, 4, 5, 6, 7], 5) == 4
 assert search([7, 11, 15, 19, 22, 33, 45], 7) == 0
 assert search([], 1) == None
-assert search([5, 5, 10, 15], 5) == 0
+assert search([1, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9], 1) == 0 
 assert search([1, 2, 3, 4, 5, 6], 10) == None
