@@ -9,7 +9,6 @@ class Fraction:
             if self.den == 0:
                 print ("error")
                 
-                
         def __str__(self):
             return f"{self.num}/{self.den}"
 
