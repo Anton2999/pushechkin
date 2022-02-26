@@ -7,7 +7,7 @@ class Fraction:
             self.num = int(input("Введите числитель: "))
             self.den = int(input("Введите знаменатель: "))
             if self.den == 0:
-                Zero Divizion Error("error")
+                ZeroDivizionError("error")
                 
         def __str__(self):
             return f"{self.num}/{self.den}"
